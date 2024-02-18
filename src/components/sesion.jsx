@@ -18,6 +18,7 @@ function Sesion({ onLogin }) {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         console.log(user)
+        window.location.href = '/';
 
       } else {
         // Registrar usuario
@@ -35,6 +36,7 @@ function Sesion({ onLogin }) {
     try {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
+      window.location.href = '/';
     } catch (error) {
       console.error(error.code, error.message);
     }
@@ -47,6 +49,7 @@ function Sesion({ onLogin }) {
       const userCredential = await signInWithPopup(auth, provider);
       const user = userCredential.user;
       console.log('Usuario inició sesión con GitHub exitosamente:', user);
+      window.location.href = '/';
     } catch (error) {
       console.error('Error al iniciar sesión con GitHub:', error);
       throw error;

@@ -4,6 +4,7 @@ import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 
+
 function PokemonHeader() {
   const [usuario, setUsuario] = useState(null);
 

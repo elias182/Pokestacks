@@ -77,10 +77,17 @@ function Juego() {
         setGameOver(true);
         setIntentos(5);
         // Agregar un documento a la colección 'perdidas' con la puntuación actual
+        if(usuario.displayName){
         await addDoc(collection(firestore, 'TOP'), {
           uid: usuario.displayName,
           puntos: score
         });
+      }else{
+        await addDoc(collection(firestore, 'TOP'), {
+          uid: usuario.email,
+          puntos: score
+        });
+      }
       }
     }
   };
