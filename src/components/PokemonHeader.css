@@ -1,0 +1,49 @@
+
+body{
+  margin: 0;
+}
+
+.pokemon-header {
+
+
+    top: 0; /* Lo fija en la parte superior de la pantalla */
+    left: 0; /* Lo fija en el borde izquierdo de la pantalla */
+    right: 0; /* Lo fija en el borde derecho de la pantalla */
+
+    color: #000000;
+    text-align: center;
+    background-color: red;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ajusta según sea necesario */
+  }
+  
+  
+  .logo img {
+    height: 75px;
+    margin-left: 15px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    height: min-content;
+  }
+  
+  nav a:hover {
+    background-color: #333333;
+    border-radius: 5px;
+  }
