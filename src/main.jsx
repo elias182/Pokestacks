@@ -9,7 +9,7 @@ import PokemonDetails from './components/pokedetail.jsx';
 import Juego from './components/juego.jsx';
 import Sesion from './components/sesion.jsx';
 import TopCollection from './components/top.jsx';
-import PrivateRoute from './privateroute.jsx';
+import PrivateRoute from './components/privateroute.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -50,7 +50,7 @@ function Main() {
       path: "TheGame",
       element: <>
       <PokemonHeader />
-      <PrivateRoute component={Juego} />
+      <PrivateRoute  />
       </>,
     },
     {
