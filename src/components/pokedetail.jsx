@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './PokemonDetails.css'; // Estilos CSS para la página
 
 function PokemonDetails() {
   const [pokemonData, setPokemonData] = useState(null);
@@ -39,7 +40,15 @@ function PokemonDetails() {
             <p className="pokemon-stat">Base Stats:</p>
             <ul className="pokemon-stats-list">
               {pokemonData.stats.map((stat, index) => (
-                <li key={index} className="stat">{stat.stat.name}: {stat.base_stat}</li>
+                <li key={index} className="stat">
+                  <span className="stat-name">{stat.stat.name}:</span>
+                  <div className="stat-bar-container">
+                    <div
+                      className="stat-bar"
+                      style={{ width: `${stat.base_stat}%` }}
+                    ></div>
+                  </div>
+                </li>
               ))}
             </ul>
           </div>

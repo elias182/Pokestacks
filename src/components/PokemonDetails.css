@@ -1,0 +1,60 @@
+.pokemon-details {
+    padding: 20px;
+  }
+  
+  .pokemon-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .pokemon-image {
+    width: 200px;
+  }
+  
+  .pokemon-stats {
+    margin-top: 20px;
+  }
+  
+  .pokemon-stat {
+    margin-bottom: 5px;
+  }
+  
+  .pokemon-types {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .type {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .pokemon-stats-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .stat {
+    margin-bottom: 5px;
+  }
+  
+  .stat-name {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .stat-bar-container {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .stat-bar {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #4caf50; /* Color de la barra de progreso */
+  }
